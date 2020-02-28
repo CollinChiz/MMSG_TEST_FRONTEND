@@ -19,7 +19,7 @@
               var results = Math.round(res.amount * 100) / 100;
               console.log(results);
 
-              $(".results").html(`<h1>${res.currency}</h1> <h3>${results}</h3>`)
+              $(".results").html(`<h2>${res.currency}</h2> <h3>${results}</h3>`)
               
 
           })
