@@ -3,6 +3,10 @@
     <head>
         <title>currency conversion</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+        <meta name="viewport" content="width=device-width">
+
 
         <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -13,25 +17,38 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <body>
-        <h1 class="title">Currency Conversion</h1>
-            <form class="inputs">
-                <input name="currency" class="currency" placeholder="currency">
-                <br>
-                <br>
-                <input name="base_amount" class="amount" type="number" placeholder="amount">
-                <br>
-                <br>
-                <input name="target_currency" class="target-currency" placeholder="target currency">
-                <br>
-                <br>
-                <button type='submit' class="submit">submit</button>
-            </form>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4 title">Currency Conversion</h1>
+              <p class="lead">List of currency acronyms <a href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html" target="_blank">here</a></p>
+            </div>
+          </div>
+            <div class="row">
+                <div class="col-md-6">
+                  <form class="form">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Currency</label>
+                      <input type="text" class="form-control currency" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Amount</label>
+                      <input type="text" class="form-control amount">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Target Amount</label>
+                      <input type="text" class="form-control target-currency">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary submit">Submit</button>
+                  </form>
+                </div>
+                <div class="results col-md-6">
+                    
+                </div>
 
-            <p>=</p>
+            </div>
+            <p class="equals">=</p>
 
-        <div class="results">
-
-        </div>
 
         <script type="text/javascript" src="index.js"></script>
     </body>

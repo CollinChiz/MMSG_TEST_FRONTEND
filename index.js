@@ -1,9 +1,9 @@
 
     $("form").on("submit", function(e) {
         e.preventDefault();
-        var currency = $(".currency").val().trim();
+        var currency = $(".currency").val().toUpperCase().trim();
         var amount = $(".amount").val().trim();
-        var targetCurrency = $(".target-currency").val().trim();
+        var targetCurrency = $(".target-currency").val().toUpperCase().trim();
     
         console.log(currency, amount, targetCurrency);
         
@@ -19,7 +19,7 @@
               var results = Math.round(res.amount * 100) / 100;
               console.log(results);
 
-              $(".results").html(`<h2>${res.currency}</h2> <h3>${results}</h3>`)
+              $(".results").html(`<h2>${res.currency}</h2> <br> <h3>${results}</h3>`)
               
 
           })

@@ -12,14 +12,14 @@
     text-align: center;
 }
 h2 {
-    font-size: 100px;
-    margin: 0;
+    background-color: lightblue;
 }
 h3 {
     font-size: 55px;
     margin: 0;
 }
-p {
-    font-size: 50px;
+.equals {
+    font-size: 60px;
     margin: 0;
+    text-align: center;
 }
