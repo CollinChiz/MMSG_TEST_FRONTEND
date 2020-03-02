@@ -23,4 +23,7 @@
               
 
           })
+          $(".currency").val("");
+          $(".amount").val("");
+          $(".target-currency").val("");
     })
